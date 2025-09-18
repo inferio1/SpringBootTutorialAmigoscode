@@ -16,7 +16,8 @@ public class DemoApplication {
 	//in order to be served as a restful endpoint
 	//need to annotate it
 	//we have get mapping, put mapping, post mapping
-	@GetMapping
+	@GetMapping("/hello")
+	@ResponseBody
 	public String hello() {
 		return "Hello World";
 	}
